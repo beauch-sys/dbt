@@ -25,6 +25,8 @@ models:
     description: "Sales Incremental Append DBT model"
   - name: product
     description: "Product Incremental Delete+Insert DBT model"
+  - name: purchase
+    description: "Purchase Incremental Merge DBT model"
 
 sources:
   - name: employee
@@ -47,3 +49,8 @@ sources:
     schema: PUBLIC
     tables:
       - name: PRODUCT_SRC
+  - name: purchase
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: PURCHASE_SRC
