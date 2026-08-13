@@ -5,7 +5,6 @@
     )
 }}
 
-
 with employee as (
     select
     EMPID as emp_id,
