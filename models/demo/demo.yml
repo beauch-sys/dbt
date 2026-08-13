@@ -21,7 +21,8 @@ models:
     description: "Customer Table DBT model"
   - name: customer_vw
     description: "Customer View DBT model"
-
+  - name: sales
+    description: "Sales Incremental Table DBT model"
 
 sources:
   - name: employee
@@ -34,3 +35,8 @@ sources:
     schema: PUBLIC
     tables:
       - name: CUSTOMER_SRC
+  - name: sales
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: SALES_SRC
