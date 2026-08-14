@@ -27,6 +27,10 @@ models:
     description: "Product Incremental Delete+Insert DBT model"
   - name: purchase
     description: "Purchase Incremental Merge DBT model"
+  - name: clean_orders
+    description: "Clean Orders Ephemeral DBT model"
+  - name: final_orders
+    description: "Final Orders DBT model"
 
 sources:
   - name: employee
@@ -54,3 +58,8 @@ sources:
     schema: PUBLIC
     tables:
       - name: PURCHASE_SRC
+  - name: orders
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: BASE_ORDERS
