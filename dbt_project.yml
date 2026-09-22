@@ -40,3 +40,8 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+
+vars:
+   target_db: GLUEDB
+   target_schema: PUBLIC
+   stage_name: GLUEDB.PUBLIC.GLUE_S3_STAGE
