@@ -1,0 +1,5 @@
+models/demo/**
+macros/concat_macro.sql
+snapshots/patient_snapshot.sql
+seeds/country_code.csv
+tests/generic/test_salary_check.sql
