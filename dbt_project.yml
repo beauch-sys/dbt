@@ -43,3 +43,10 @@ models:
       gold:
           +schema: gold
           +materialized: view
+
+vars:
+   wrk_schema: BRONZE
+   file_format_json: SCD2_DB.BRONZE.MY_CSV_FORMAT
+   purge_status: FALSE
+   stage_name: SCD2_DB.BRONZE.SCD2_STG
+   rawhist_db: SCD2_DB
