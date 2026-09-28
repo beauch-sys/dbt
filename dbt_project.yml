@@ -38,8 +38,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   scd2_workshop:
       silver:
-          schema: silver
-          materialized: table
+          +schema: silver
+          +materialized: table
       gold:
-          schema: gold
-          materialized: view
+          +schema: gold
+          +materialized: view

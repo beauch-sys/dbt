@@ -1,6 +1,6 @@
 macros/concat_macro.sql
 macros/copy_into_snowflake.sql
-macros/generate_schema_name.sql
+# macros/generate_schema_name.sql
 
 models/demo/**
 models/mart/**
