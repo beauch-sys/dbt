@@ -1,5 +1,14 @@
-models/demo/**
 macros/concat_macro.sql
-snapshots/patient_snapshot.sql
+macros/copy_into_snowflake.sql
+macros/generate_schema_name.sql
+
+models/demo/**
+models/mart/**
+models/raw/**
+models/transform/**
+
 seeds/country_code.csv
+
+snapshots/patient_snapshot.sql
+
 tests/generic/test_salary_check.sql
